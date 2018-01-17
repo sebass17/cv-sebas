@@ -1,0 +1,37 @@
+$light-orange: #FFB74D;
+$dark-orange: #E69E33;
+
+.card {
+  margin: 0.8rem 0rem;
+}
+
+.card-icon {
+  display: inline-block;
+  margin-right: 1rem
+}
+
+.card-project {
+  display:inline-block;
+  margin-bottom: 0rem;
+}
+
+.card-description {
+  padding: 0.8rem 1.2rem;
+}
+
+.card-header-display {
+  display: flex;
+  align-items: center;
+}
+
+.card-header {
+  background-color: $dark-orange;
+}
+  
+.card-body {
+  background-color: $light-orange;
+}
+  
+.card-footer {
+  background-color: $dark-orange;
+}

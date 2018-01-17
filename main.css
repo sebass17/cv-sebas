@@ -1,0 +1,270 @@
+.animated-background {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #000000 50%, #111111 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1; }
+
+.first-animation {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s; }
+
+.second-animation {
+  animation-duration: 5s; }
+
+.card {
+  margin: 0.8rem 0rem; }
+
+.card-icon {
+  display: inline-block;
+  margin-right: 1rem; }
+
+.card-project {
+  display: inline-block;
+  margin-bottom: 0rem; }
+
+.card-description {
+  padding: 0.8rem 1.2rem; }
+
+.card-header-display {
+  display: flex;
+  align-items: center; }
+
+.card-header {
+  background-color: #E69E33; }
+
+.card-body {
+  background-color: #FFB74D; }
+
+.card-footer {
+  background-color: #E69E33; }
+
+.carousel-item .img-fluid {
+  width: 39.38rem;
+  height: 17.5rem; }
+
+.carousel-item a {
+  display: block;
+  width: 100%; }
+
+.carousel {
+  border-radius: 55px 55px 55px 55px;
+  overflow: hidden; }
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg); }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg); }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg); } }
+
+.chip {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px; }
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden; }
+
+.heads {
+  z-index: 2;
+  transform: rotateY(0deg); }
+
+.tails {
+  z-index: 1;
+  transform: rotateY(180deg); }
+
+.spin {
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3.2s;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d; }
+
+.skill-padding {
+  padding-bottom: 0.6rem; }
+
+.technical-skill {
+  cursor: pointer; }
+
+body {
+  /* The image used */
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%); }
+  100% {
+    transform: translateX(25%); } }
+
+.section-padding {
+  padding: 1rem 0; }
+
+.transparent-blue-section {
+  background-color: rgba(79, 195, 247, 0.1); }
+
+.transparent-orange-section {
+  background-color: rgba(255, 183, 77, 0.1); }
+
+.skill-header-padding {
+  padding-bottom: 0.6rem; }
+
+.no-margin-bottom {
+  margin-bottom: 0rem; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 0rem; }
+
+.language-col-padding {
+  padding: 0.5rem; }
+
+.hobbies-header-padding {
+  padding-bottom: 1rem; }
+
+.technology-hobby {
+  object-fit: contain;
+  padding: 1.8rem; }
+
+.poker-hobby {
+  object-fit: contain;
+  padding: 1.6rem; }
+
+.hobby {
+  object-fit: contain;
+  padding: 0.7rem; }
+
+.header-bottom {
+  padding-bottom: 1rem; }
+
+.header-top {
+  padding-top: 1rem; }
+
+.center-text {
+  text-align: center; }
+
+.skill-margin {
+  margin-bottom: 0rem; }
+
+.main-container {
+  border: 3.3px solid #000000;
+  padding: 0; }
+
+.light-orange-text {
+  color: #FFB74D; }
+
+.blue-text {
+  color: #4FC3F7; }
+
+.white-text {
+  color: #ffffff; }
+
+.main-header-font-size {
+  font-size: 3.8rem; }
+
+.secondary-header-font-size {
+  font-size: 1.5rem; }
+
+.portrait-container {
+  margin: 2rem 4rem;
+  width: 14.5rem;
+  height: 14.5rem; }
+
+.column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img-circle {
+  margin: 1rem 0;
+  width: 14.5rem;
+  height: 14.5rem;
+  border-radius: 60%;
+  border: 5px solid #4FC3F7; }
+
+.description-container {
+  text-align: right;
+  margin: 20px; }
+
+.description-paragraph {
+  color: #ffffff;
+  margin: 20px 0; }
+
+.language-category {
+  margin-bottom: 0px;
+  padding-left: 0.5rem; }
+
+.section-separator {
+  width: 100%;
+  background-color: #000000;
+  height: 0.2rem; }
+
+.row-centered {
+  text-align: center; }
+
+.contact-icon-resize {
+  width: 2rem;
+  height: auto; }
+
+.technology-icon-resize {
+  width: 3rem;
+  height: 3rem; }
+
+.contact-icon-container {
+  text-align: center;
+  padding: 0.6rem; }
+
+.technology-icon-container {
+  position: relative;
+  text-align: center; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.technical-skill-header-padding {
+  padding-bottom: 0.3rem; }
+
+.remove-bottom-padding {
+  padding-bottom: 0rem; }
+
+a:link {
+  text-decoration: none;
+  color: #ffffff; }
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff; }
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff; }
+
+a:active {
+  text-decoration: none;
+  color: #ffffff; }

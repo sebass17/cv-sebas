@@ -1,0 +1,226 @@
+//Colors
+$white: #ffffff;
+$black: #000000;
+$light-orange: #FFB74D;
+$blue: #4FC3F7;
+$transparent-blue: rgba(79,195,247, 0.1);
+$transparent-orange: rgba(255,183,77,0.1);
+
+body {
+  /* The image used */
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+  
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+  
+@mixin cv-section($width, $bg-color) {
+  width: $width;
+  background-color: $bg-color;
+}
+
+.section-padding {
+  padding: 1rem 0;
+}
+
+.transparent-blue-section {
+  background-color: $transparent-blue;
+}
+
+.transparent-orange-section {
+  background-color: $transparent-orange;
+}
+
+.skill-header-padding {
+  padding-bottom:0.6rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.language-col-padding {
+  padding:0.5rem;
+}
+
+.hobbies-header-padding {
+  padding-bottom: 1rem;
+}
+
+.technology-hobby {
+  object-fit:contain;
+  padding:1.8rem;
+}
+
+.poker-hobby {
+  object-fit:contain; 
+  padding:1.6rem;
+}
+
+.hobby {
+  object-fit:contain;
+  padding:0.7rem;
+}
+
+.header-bottom {
+  padding-bottom: 1rem;
+}
+
+.header-top {
+  padding-top: 1rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.skill-margin {
+  margin-bottom: 0rem;
+}
+
+.main-container {
+  border:3.3px solid $black; 
+  padding: 0;
+}
+
+.light-orange-text {
+  color: $light-orange;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.white-text {
+  color: $white;
+}
+
+.main-header-font-size {
+  font-size: 3.8rem;
+}
+
+.secondary-header-font-size {
+  font-size: 1.5rem;
+}
+
+.portrait-container {
+  margin: 2rem 4rem;
+  width: 14.5rem;
+  height: 14.5rem;
+}
+
+.column-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-circle {
+  margin: 1rem 0;
+  width: 14.5rem;
+  height: 14.5rem;
+  border-radius: 60%;
+  border: 5px solid $blue;
+}
+
+.description-container {
+  text-align: right;
+  margin: 20px;
+}
+
+.description-paragraph {
+  color: $white;
+  margin: 20px 0;
+}
+
+.language-category {
+  margin-bottom:0px;
+  padding-left:0.5rem;
+}
+
+.section-separator {
+  @include cv-section(100%, $black);
+  height: 0.2rem;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.contact-icon-resize {
+  width: 2rem;
+  height: auto;
+}
+
+.technology-icon-resize {
+  width: 3rem;
+  height: 3rem;
+}
+
+.contact-icon-container {
+  text-align: center;
+  padding: 0.6rem;
+}
+
+.technology-icon-container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.technical-skill-header-padding {
+  padding-bottom:0.3rem;
+}
+
+.remove-bottom-padding {
+  padding-bottom: 0rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: $white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+a:active {
+  text-decoration: none;
+  color: $white;
+}

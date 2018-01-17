@@ -1,0 +1,55 @@
+@keyframes rotation {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+      transform: rotate3d(0, 1, 0, 180deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+  }
+  
+  .chip {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+ 
+  .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+  }
+
+  .heads {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .tails {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  
+  .spin {
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3.2s;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .skill-padding {
+    padding-bottom: 0.6rem;
+  }
+
+  .technical-skill {
+    cursor: pointer;
+  }
