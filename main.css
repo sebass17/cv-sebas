@@ -170,7 +170,7 @@ body {
   margin-bottom: 0rem; }
 
 .main-container {
-  border: 3.3px solid #000000;
+  border: 3.3px solid #303030;
   padding: 0; }
 
 .light-orange-text {
@@ -219,7 +219,7 @@ body {
 
 .section-separator {
   width: 100%;
-  background-color: #000000;
+  background-color: #303030;
   height: 0.2rem; }
 
 .row-centered {
